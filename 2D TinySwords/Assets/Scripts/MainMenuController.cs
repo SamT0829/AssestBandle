@@ -24,9 +24,6 @@ public class MainMenuController : MonoBehaviour
     /// </summary>
     void Start()
     {
-        // 清除 AssetReference
-        Addressables.ClearDependencyCacheAsync(gameSceneAsset.RuntimeKey);
-
         m_gameStartButton.onClick.AddListener(OnGameStartClick);
     }
 

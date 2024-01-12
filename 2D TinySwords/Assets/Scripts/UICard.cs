@@ -21,8 +21,6 @@ public class UICard : MonoBehaviour
     /// </summary>
     void Start()
     {
-        Addressables.ClearDependencyCacheAsync(m_assetReference.RuntimeKey);
-
         GameManager.Instance.AssetBundleHandler.LoadAssetBundle<GameObject>(m_assetReference, OnLoadFinish);
         m_button.onClick.AddListener(OnUICardClick);
     }

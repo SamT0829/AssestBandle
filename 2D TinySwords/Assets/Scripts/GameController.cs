@@ -21,9 +21,6 @@ public class GameController : MonoBehaviour
     /// </summary>
     void Start()
     {
-        Addressables.ClearDependencyCacheAsync(m_blueCastleAsset.RuntimeKey);
-        Addressables.ClearDependencyCacheAsync(m_blueTowereAsset.RuntimeKey);
-
         GameManager.Instance.AssetBundleHandler.InstantiateAssetBundle(m_blueCastleAsset, OnBlueCastleInstantiateComplete);
         GameManager.Instance.AssetBundleHandler.InstantiateAssetBundle(m_blueTowereAsset, OnBlueTowerInstantiateComplete);
     }
