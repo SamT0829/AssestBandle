@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: BlueTeamTower
+  m_EditorClassIdentifier: 
+  m_GroupName: BlueTeamTower
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d1df6ecfb11ae3348a32510bf71bec89
+  m_SerializeEntries:
+  - m_GUID: d702adc8ac477f344839fd5fa3947128
+    m_Address: Assets/Prefabs/Blue/Tower/Castle_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Blue
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 747296007e9e16b48a29b1e5357a869d
+    m_Address: Assets/Prefabs/Blue/Tower/Tower_Blue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Blue
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8eb303a67d37e974a8d35f7698f23b71, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1b6c014fd9d4f7d4b896ea7876405f10, type: 2}
+    - {fileID: 11400000, guid: 385f0c4c227d67a4c9cd4dd873a99a9c, type: 2}
