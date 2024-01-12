@@ -21,6 +21,7 @@ public class UICard : MonoBehaviour
     /// </summary>
     void Start()
     {
+        // GameManager.Instance.AssetBundleHandler.ClearAssestOjb(m_assetReference);
         GameManager.Instance.AssetBundleHandler.LoadAssetBundle<GameObject>(m_assetReference, OnLoadFinish);
         m_button.onClick.AddListener(OnUICardClick);
     }

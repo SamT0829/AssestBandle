@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField] Button m_gameStartButton;
+    [SerializeField] Button m_unloadSceneButton;
+
     [SerializeField] AssetReference gameSceneAsset;
 
     /// <summary>
@@ -25,6 +27,12 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         m_gameStartButton.onClick.AddListener(OnGameStartClick);
+        m_unloadSceneButton.onClick.AddListener(OnUnloadSceneButton);
+    }
+
+    private void OnUnloadSceneButton()
+    {
+        GameManager.Instance.AssetBundleHandler.ClearAssestOjb(gameSceneAsset);
     }
 
     private void OnGameStartClick()
