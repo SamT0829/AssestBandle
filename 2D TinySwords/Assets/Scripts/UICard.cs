@@ -23,7 +23,7 @@ public class UICard : MonoBehaviour
     {
         Addressables.ClearDependencyCacheAsync(m_assetReference.RuntimeKey);
 
-        GameManager.Instance.AssetBundleHandler.LoadAssestBundle<GameObject>(m_assetReference, OnLoadFinish);
+        GameManager.Instance.AssetBundleHandler.LoadAssetBundle<GameObject>(m_assetReference, OnLoadFinish);
         m_button.onClick.AddListener(OnUICardClick);
     }
     private void OnLoadFinish(GameObject @object)
@@ -33,7 +33,7 @@ public class UICard : MonoBehaviour
 
     private void OnUICardClick()
     {
-        GameManager.Instance.AssetBundleHandler.InstantiateAssestBundle(m_assetReference, OnInstanteFinish);
+        GameManager.Instance.AssetBundleHandler.InstantiateAssetBundle(m_assetReference, OnInstanteFinish);
     }
 
     private void OnInstanteFinish(GameObject @object)
@@ -43,7 +43,5 @@ public class UICard : MonoBehaviour
 
         GameManager.Instance.changeObject = @object;
         GameManager.Instance.changeObject.GetComponent<Transform>().position = m_spawnPosition.position;
-
-
     }
 }

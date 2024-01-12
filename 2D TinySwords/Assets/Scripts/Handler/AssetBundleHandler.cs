@@ -4,17 +4,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.ResourceManagement.ResourceProviders;
+using UnityEngine.SceneManagement;
 
 public class AssetBundleHandler : MonoBehaviour
 {
-    public void InstantiateAssestBundle(AssetReference addressNameStr, Action<GameObject> onInstanteFinish)
+    public void InstantiateAssetBundle(AssetReference assetReference, Action<GameObject> onInstanteFinish)
     {
-        StartCoroutine(OnInstantiateAssestBundle(addressNameStr, onInstanteFinish));
+        StartCoroutine(OnInstantiateAssestBundle(assetReference, onInstanteFinish));
     }
 
-    public void LoadAssestBundle<TObject>(AssetReference addressNameStr, Action<TObject> onInstanteFinish)
+    public void LoadAssetBundle<TObject>(AssetReference assetReference, Action<TObject> onLoadFinish)
     {
-        StartCoroutine(OnLoadAssestBundle<TObject>(addressNameStr, onInstanteFinish));
+        StartCoroutine(OnLoadAssestBundle(assetReference, onLoadFinish));
+    }
+
+    public void LoadAssetScene(AssetReference assetReference, Action onLoadSceneFinish)
+    {
+        StartCoroutine(OnLoadAssetScene(assetReference, onLoadSceneFinish));
+    }
+
+    public void DownloadAssetScene(AssetReference assetReference, Action onDownloadAssetFinish)
+    {
+        StartCoroutine(OnDownloadAssetScene(assetReference, onDownloadAssetFinish));
+    }
+
+    public void GetDownloadSize(AssetReference assetReference)
+    {
+        Addressables.GetDownloadSizeAsync(assetReference.RuntimeKey);
     }
 
     public void ClearAssestOjb(AssetReference addressNameStr)
@@ -23,9 +40,9 @@ public class AssetBundleHandler : MonoBehaviour
     }
 
     // Instantiate
-    private IEnumerator OnInstantiateAssestBundle(AssetReference addressNameStr, Action<GameObject> onInstanteFinish)
+    private IEnumerator OnInstantiateAssestBundle(AssetReference assetReference, Action<GameObject> onInstanteFinish)
     {
-        var handle = addressNameStr.InstantiateAsync();
+        var handle = assetReference.InstantiateAsync();
         handle.Completed += e => OnInstanceAssestObjLoaded(e, onInstanteFinish);
 
         while (!handle.IsDone)
@@ -36,7 +53,6 @@ public class AssetBundleHandler : MonoBehaviour
             yield return null;
         }
     }
-
     private void OnInstanceAssestObjLoaded(AsyncOperationHandle<GameObject> handle, Action<GameObject> onInstanteFinish)
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -47,11 +63,11 @@ public class AssetBundleHandler : MonoBehaviour
             Debug.LogError("Instance Asset Failed");
     }
 
-    // Load
-    private IEnumerator OnLoadAssestBundle<TObject>(AssetReference addressNameStr, Action<TObject> onInstanteFinish)
+    // Load object
+    private IEnumerator OnLoadAssestBundle<TObject>(AssetReference assetReference, Action<TObject> onLoadFinish)
     {
-        var handle = Addressables.LoadAssetAsync<TObject>(addressNameStr);
-        handle.Completed += e => OnLoadAssestObjLoaded(e, onInstanteFinish);
+        var handle = Addressables.LoadAssetAsync<TObject>(assetReference);
+        handle.Completed += e => OnLoadAssestObjLoaded(e, onLoadFinish);
 
         while (!handle.IsDone)
         {
@@ -61,11 +77,60 @@ public class AssetBundleHandler : MonoBehaviour
             yield return null;
         }
     }
-    private void OnLoadAssestObjLoaded<TObject>(AsyncOperationHandle<TObject> handle, Action<TObject> onInstanteFinish)
+    private void OnLoadAssestObjLoaded<TObject>(AsyncOperationHandle<TObject> handle, Action<TObject> onLoadFinish)
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
-            onInstanteFinish.Invoke(handle.Result);
+            onLoadFinish.Invoke(handle.Result);
+        }
+        else
+            Debug.LogError("Loading Asset Failed");
+    }
+
+    // Scene
+    private IEnumerator OnLoadAssetScene(AssetReference assetReference, Action onLoadSceneFinish)
+    {
+        var handle = Addressables.LoadSceneAsync(assetReference.RuntimeKey, LoadSceneMode.Additive);
+        handle.Completed += e => OnLoadSceneLoaded(e, onLoadSceneFinish);
+
+        while (!handle.IsDone)
+        {
+            var status = handle.GetDownloadStatus();
+            float progress = status.Percent;
+            Debug.Log(progress);
+            yield return null;
+        }
+    }
+
+    private void OnLoadSceneLoaded(AsyncOperationHandle<SceneInstance> handle, Action onLoadSceneFinish)
+    {
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            onLoadSceneFinish.Invoke();
+        }
+        else
+            Debug.LogError("Loading Asset Failed");
+    }
+
+    private IEnumerator OnDownloadAssetScene(AssetReference assetReference, Action onDownloadAssetFinish)
+    {
+        var handle = Addressables.DownloadDependenciesAsync(assetReference.RuntimeKey);
+        handle.Completed += e => OnDownloadSceneComplete(e, onDownloadAssetFinish);
+
+        while (!handle.IsDone)
+        {
+            var status = handle.GetDownloadStatus();
+            float progress = status.Percent;
+            Debug.Log(progress);
+            yield return null;
+        }
+    }
+
+    private void OnDownloadSceneComplete(AsyncOperationHandle handle, Action onInstanteFinish)
+    {
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            onInstanteFinish.Invoke();
         }
         else
             Debug.LogError("Loading Asset Failed");

@@ -1,0 +1,289 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.17f1 (4fc78088f837) revision 5228416'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'zh' Physical Memory: 16171 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\ProgaramFiles\Unity\2022.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/user/Desktop/Unity/2D TinySwords
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+65158
+Successfully changed project path to: C:/Users/user/Desktop/Unity/2D TinySwords
+C:/Users/user/Desktop/Unity/2D TinySwords
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [17976] Host "[IP] 192.168.0.71 [Port] 0 [Flags] 2 [Guid] 3209021616 [EditorId] 3209021616 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5KPQOPD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [17976] Host "[IP] 192.168.0.71 [Port] 0 [Flags] 2 [Guid] 3209021616 [EditorId] 3209021616 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5KPQOPD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 8.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path D:/ProgaramFiles/Unity/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/Unity/2D TinySwords/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8050 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'D:/ProgaramFiles/Unity/2022.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/ProgaramFiles/Unity/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/ProgaramFiles/Unity/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/ProgaramFiles/Unity/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003392 seconds.
+- Loaded All Assemblies, in  0.297 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.217 seconds
+Domain Reload Profiling: 514ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (104ms)
+		LoadAssemblies (104ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (103ms)
+			TypeCache.Refresh (102ms)
+				TypeCache.ScanAssembly (92ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (217ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (168ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (119ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.550 seconds
+Refreshing native plugins compatible for Editor in 2.61 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.641 seconds
+Domain Reload Profiling: 1189ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (245ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (160ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (641ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (510ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (354ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6272 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (0.9 MB). Loaded Objects now: 6721.
+Memory consumption went from 236.8 MB to 235.9 MB.
+Total: 3.235400 ms (FindLiveObjects: 0.309900 ms CreateObjectMapping: 0.179000 ms MarkObjects: 2.380000 ms  DeleteObjects: 0.365600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 62b5816608c3102f162a1797e29626cf -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61909.103846 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Blue/Archer_Blue.aseprite
+  artifactKey: Guid(499e9a064a2dc8b4e93eed41d7ce1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Blue/Archer_Blue.aseprite using Guid(499e9a064a2dc8b4e93eed41d7ce1444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6115f13f0df822cb36eddbd26a8d4921') in 0.367246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 86
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png
+  artifactKey: Guid(4c5ca227d45c1184283491b58fc37236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/Dead.png using Guid(4c5ca227d45c1184283491b58fc37236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b28ec6ac497b71c7504a0321392ecb') in 0.016339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/07.png
+  artifactKey: Guid(2c49e710861cb1f4c86f5066e74610c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/07.png using Guid(2c49e710861cb1f4c86f5066e74610c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a58c57ab21eb5f40ac325611fe2598') in 0.013818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/16.png
+  artifactKey: Guid(fcf48e6d1d97e8843b0348cf46c49f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/16.png using Guid(fcf48e6d1d97e8843b0348cf46c49f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e14ce77eddbf1aacb262940b4564a6f') in 0.013176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Red_3Slides_Pressed.png
+  artifactKey: Guid(d989b92950d26e34bb231612fdc79377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Red_3Slides_Pressed.png using Guid(d989b92950d26e34bb231612fdc79377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96b418ff048e593b24795c1a92e755f') in 0.014668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/04.png
+  artifactKey: Guid(9e0594092090bb0418490ca02dd4226e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Deco/04.png using Guid(9e0594092090bb0418490ca02dd4226e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb179910b8b50c16f5ec0b3d93de716') in 0.013064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Hover_9Slides.png
+  artifactKey: Guid(3cdaec42a9b6f48468e7f3193331c92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Hover_9Slides.png using Guid(3cdaec42a9b6f48468e7f3193331c92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3898f65be160d9570cf010132a0a5ee9') in 0.014308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Buildings/Castle/Castle_Destroyed.png
+  artifactKey: Guid(42dfbd49bcd07f543aeb9aa6375279e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Buildings/Castle/Castle_Destroyed.png using Guid(42dfbd49bcd07f543aeb9aa6375279e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcd654184bdd38b62ad652ac61ed0cb') in 0.014869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Red_9Slides.png
+  artifactKey: Guid(e1354826bbc961541ac6466e9b7c2514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/UI/Buttons/Button_Red_9Slides.png using Guid(e1354826bbc961541ac6466e9b7c2514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903c5c724dbd027f7e03d5ddf1a22b04') in 0.014387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.009500 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/Archer_Bow_Red.png
+  artifactKey: Guid(a2ed6f367f4588748b128dac88db7a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/Archer_Bow_Red.png using Guid(a2ed6f367f4588748b128dac88db7a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a6a885f76d2e14ad1c133a56f2f1a7') in 0.015223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Red/Archer_Red.aseprite
+  artifactKey: Guid(d63649ea3fe5aa64a83d954ba8f55c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Red/Archer_Red.aseprite using Guid(d63649ea3fe5aa64a83d954ba8f55c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7abeb7557fa065f3699e7e2db0e5a1') in 0.321125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 85
+========================================================================
+Received Import Request.
+  Time since last request: 8.840129 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/Archer_Bow_Blue.png
+  artifactKey: Guid(c1804181133734b40bbda2b9547723c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/Archer_Bow_Blue.png using Guid(c1804181133734b40bbda2b9547723c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc13d185d8df5290821bd15cf9986f7') in 0.017695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Purple/Archer_Purlple.png
+  artifactKey: Guid(50550de288503054f8aa365dfabf6c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny Swords/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Purple/Archer_Purlple.png using Guid(50550de288503054f8aa365dfabf6c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8025253903ca5879ec59789ff013bf1') in 0.056739 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 因為執行緒結束或應用程式要求，所以已中止 I/O 操作。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
